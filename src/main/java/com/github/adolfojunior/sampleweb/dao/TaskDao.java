@@ -11,7 +11,7 @@ import com.github.adolfojunior.sampleweb.domain.Task;
 @Stateless
 public class TaskDao {
 
-  @PersistenceContext(unitName = "test")
+  @PersistenceContext
   private EntityManager entityManager;
 
   public List<Task> getAll() {
