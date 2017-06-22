@@ -48,6 +48,14 @@ public class Task {
     this.name = name;
   }
 
+  public String getDesctiption() {
+    return desctiption;
+  }
+
+  public void setDesctiption(String desctiption) {
+    this.desctiption = desctiption;
+  }
+
   public LocalDateTime getCreationTime() {
     return creationTime;
   }
