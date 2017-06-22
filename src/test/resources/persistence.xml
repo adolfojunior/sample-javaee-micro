@@ -22,6 +22,8 @@
         <jta-data-source>jdbc/test</jta-data-source>
         <properties>
             <property name="eclipselink.ddl-generation" value="create-tables"/>
+            <property name="eclipselink.logging.level.sql" value="FINE"/>
+            <property name="eclipselink.logging.parameters" value="true"/>
         </properties>
     </persistence-unit>
 </persistence>

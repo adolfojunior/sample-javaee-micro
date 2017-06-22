@@ -120,19 +120,10 @@
 							</arguments>
 							<includeProjectDependencies>false</includeProjectDependencies>
 							<includePluginDependencies>true</includePluginDependencies>
-							<executableDependency>
-								<groupId>fish.payara.extras</groupId>
-								<artifactId>payara-micro</artifactId>
-							</executableDependency>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
 		</plugins>
-		<testResources>
-			<testResource>
-				<directory>src/test/resources</directory>
-			</testResource>
-		</testResources>
 	</build>
 </project>
