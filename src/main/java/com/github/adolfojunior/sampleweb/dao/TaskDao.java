@@ -1,4 +1,4 @@
-package com.github.adolfojunior.sampleweb.sao;
+package com.github.adolfojunior.sampleweb.dao;
 
 import java.util.List;
 

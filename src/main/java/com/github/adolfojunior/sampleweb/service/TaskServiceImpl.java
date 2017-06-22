@@ -5,8 +5,8 @@ import java.util.List;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
+import com.github.adolfojunior.sampleweb.dao.TaskDao;
 import com.github.adolfojunior.sampleweb.domain.Task;
-import com.github.adolfojunior.sampleweb.sao.TaskDao;
 
 @Singleton
 public class TaskServiceImpl implements TaskService {

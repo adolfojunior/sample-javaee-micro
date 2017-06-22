@@ -21,9 +21,10 @@ public class TaskServiceTest {
   @Deployment
   public static Archive<?> createDeploymentPackage() {
     return ShrinkWrap.create(WebArchive.class, "arquillian-test.war")
-        .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml")
-        .addAsManifestResource(EmptyAsset.INSTANCE, "web.xml")
-        .addAsManifestResource("persistence.xml", "persistence.xml")
+        .addAsResource(EmptyAsset.INSTANCE, "META-INF/beans.xml")
+        .addAsResource(EmptyAsset.INSTANCE, "META-INF/web.xml")
+        // .addAsManifestResource("persistence.xml", "persistence.xml")
+        .addAsResource("persistence.xml", "META-INF/persistence.xml")
         .addPackages(true, "com.github.adolfojunior.sampleweb");
   }
 

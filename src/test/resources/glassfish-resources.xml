@@ -20,8 +20,8 @@ file and include the License file at packager/legal/LICENSE.txt.
 <resources>
     <jdbc-resource pool-name="test-pool" jndi-name="jdbc/test"/>
     <jdbc-connection-pool name="test-pool"
-                          res-type="javax.sql.DataSource"
-                          datasource-classname="org.h2.jdbcx.JdbcDataSource">
+      res-type="javax.sql.DataSource"
+      datasource-classname="org.h2.jdbcx.JdbcDataSource">
         <property name="user" value="sa"/>
         <property name="password" value=""/>
         <property name="url" value="jdbc:h2:mem:test"/>
